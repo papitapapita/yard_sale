@@ -5,8 +5,19 @@
   --dark: #232830;
   --white: #ffffff;
   --black: #000000;
+  --sm: 1.4rem;
+  --md: 1.6rem;
+  --lg: 1.8rem;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Quicksand", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
 }
