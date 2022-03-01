@@ -10,9 +10,296 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" type="text/css" >
+    <link rel="shortcut icon" href="./logos/favicon_bota_fora.svg" type="img">
     <title>Yard Sale</title>
+    <style>
+        :root{
+            --screen-size: 14rem;
+        }
+        @media (min-width: 426px)
+        {
+            :root{
+                --screen-size: 24rem;
+            }
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .image-container{
+            margin: 0;
+        }
+
+        .store{
+            padding: 1.2rem;
+            max-width: 192rem;
+            width: 100%;
+        }
+        .filtering{
+            display: flex;
+            justify-content: center;
+
+            margin-bottom: 3rem;
+        }
+        .filtering__search-bar{
+            padding: 1rem;
+            border: none;
+            border-radius: .8rem;
+            color: var(--very-light-pink);
+
+            background-color: var(--text-input-field);
+        }
+        .products{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, var(--screen-size));
+            justify-content: center;
+            gap: 1.2rem;
+        }
+        .item{
+            width: 100%;
+        }
+        .card__img{
+            width: 100%;
+            height: var(--screen-size);
+            border-radius: 2rem;
+            object-fit: cover;
+        }
+        .item__product-info{
+            display: flex;
+            justify-content: space-between;
+
+            margin-top: .8rem;
+        }
+        .item__price, .item__name{
+            margin: 0;
+            font-size: var(--sm);
+        }
+        .item__price{
+            font-weight: bold;
+        }
+        .item__name{
+            color: var(--very-light-pink);
+            font-weight:600;
+        }
+        .item__button--addtocart{
+            width: 3.6rem;
+            height: 3.6rem;
+        }
+    </style>
 </head>
 <body>
-    
+    <section class="store">
+        <section class="filtering">
+            <input type="text" class="filtering__search-bar" placeholder="Search product">
+        </section>
+        <main class="products">
+            <div class="item">
+                <figure class="image-container">
+                    <img src="./images/bike.jpeg" alt="" class="card__img">
+                </figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container">
+                        <a href="" class="item__link--addtocart">
+                            <img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+            <div class="item">
+                <figure class="image-container"><img src="./images/bike.jpeg" alt="" class="card__img"></figure>
+                <div class="item__product-info">
+                    <div class="item__text">
+                        <p class="item__price">$ 120,00</p>
+                        <p class="item__name">Bike</p>
+                    </div>
+                    <figure class="image-container"><a href="" class="item__link--addtocart"><img src="./icons/bt_add_to_cart.svg" alt="" class="item__button--addtocart"></a></figure>
+                </div>
+            </div>
+        </main>
+    </section>
 </body>
 </html>
