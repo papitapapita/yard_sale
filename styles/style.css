@@ -11,8 +11,13 @@
   font-size: 62.5%;
 }
 
+.image-container {
+  margin: 0;
+}
+
 * {
   box-sizing: border-box;
+  font-size: var(--sm);
 }
 
 body {
