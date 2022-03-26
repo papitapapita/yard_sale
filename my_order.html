@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is store of whatever">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css" type="text/css" >
+    <link rel="shortcut icon" href="./logos/favicon_bota_fora.svg" type="img">
+    <title>Yard Sale</title>
+    <style>
+        :root{
+            --screen-size: 20rem;
+        }
+        @media (min-width: 426px) {
+            :root {
+                --screen-size: 24rem;
+            }
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .myorder{
+            min-width: 280px;
+            max-width: 500px;
+            width: 100%;
+            padding: 2rem;
+        }
+        .myorder__title
+        {
+            font-size: var(--lg);
+            text-align: center;
+        }
+        .accumulated{
+            display: flex;
+            justify-content: space-between;
+
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+
+            background-color: var(--text-input-field);
+        }
+        .accumulated__text{
+            display: flex;
+            flex-direction: column;
+        }
+        .item__image{
+            max-width: 8rem;
+            height: 8rem;
+            border-radius: 2.4rem;
+
+            object-fit: cover;
+        }
+        .accumulated__date{
+            font-weight: bold;
+        }
+        .accumulated__price{
+            font-size: var(--md);
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+        }
+        .item{
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+            margin-bottom: 1.2rem;
+            padding-right: 2rem;
+        }
+        .item__description{
+            width: 56%;
+            display: flex;
+            align-items: center;
+        }
+        .item__image{
+            margin-right: 1.6rem;
+        }
+        .item__price
+        {
+            display: flex;
+            align-items:  center;
+
+            font-weight: 600;
+            font-size: var(--md);
+        }
+    </style>
+</head>
+<body>
+    <section class="myorder">
+        <h3 class="myorder__title">My order</h3>
+        <div class="myorder__items">
+            <div class="accumulated">
+                <p class="accumulated__text">
+                    <span class="accumulated__date">04.25.2021</span>
+                    <span class="accumulated__articles">6 articles</span>
+                </p>
+                <p class="accumulated__price">
+                    $560.00
+                </p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+            <div class="item">
+                <div class="item__description">
+                    <figure class="image-container"><img src="images/bike.jpeg" alt="A bike" class="item__image"></figure>
+                    <p class="item__article" >Round shelf</p>
+                </div>
+                <p class="item__price">$120.00</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
