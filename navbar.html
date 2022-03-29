@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is store of whatever">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css" type="text/css" >
+    <link rel="shortcut icon" href="./logos/favicon_bota_fora.svg" type="img">
+    <title>Yard Sale</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 2rem;
+
+            box-shadow: 0px 7px 15px -8px rgba(199,199,199,1);
+        }
+        .menu__logo{
+            width: 16rem;
+        }
+        .menu__list-container
+        {
+            display: flex;
+        }
+        .menu__link{
+            padding: 1rem;
+            border: .1rem solid transparent;
+            border-radius: .4rem;
+
+            color: var(--very-light-pink);
+            font-weight: 700;
+            font-size: var(--md);
+        }
+        .menu__link:hover{
+            border-color: var(--hospital-green);
+
+            color: var(--hospital-green);
+        }
+        .menu__user{
+            display: flex;
+            align-items: center;
+        }
+        .menu__email{
+            margin-right: 2rem;
+        }
+        @media (min-width: 1024px) {
+           .menu__burguer{
+               display: none;
+           }
+        }
+        @media (max-width: 1023px)
+        {
+           .menu__list-container{
+               display: none;
+           }
+           .menu__email{
+               display: none;
+           }
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <img src="icons/icon_menu.svg" alt="burguer menu" class="menu__burguer">
+        <figure class="image-container">
+            <img src="logos/logo_yard_sale.svg" alt="logo" class="menu__logo">
+        </figure>
+        <ul class="menu__list-container">
+            <li class="menu__item"> <a href="#" class="menu__link">All</a> </li>
+            <li class="menu__item"> <a href="#" class="menu__link">Clothes</a> </li>
+            <li class="menu__item"> <a href="#" class="menu__link">Electronics</a> </li>
+            <li class="menu__item"> <a href="#" class="menu__link">Furniture</a> </li>
+            <li class="menu__item"> <a href="#" class="menu__link">Toys</a> </li>
+            <li class="menu__item"> <a href="#" class="menu__link">Others</a> </li>
+        </ul>
+        <div class="menu__user">
+            <span class="menu__email">example@gmail.com</span>
+            <img src="icons/icon_shopping_cart_notification.svg" alt="shopping cart notificacition">
+        </div>
+    </nav>
+</body>
+</html>
